@@ -6,7 +6,9 @@ RUN apt-get update \
 	&& apt-get install -y \
 	libzip-dev \
 	zip \
-	libpng-dev
+	libpng-dev \
+	vim \
+	less
 
 # PHP config for MyAAC
 RUN docker-php-ext-install zip pdo pdo_mysql gd
